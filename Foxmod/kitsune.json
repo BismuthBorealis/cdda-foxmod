@@ -1,0 +1,272 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "kitsune_serum",
+    "name": "Star Pearl Serum",
+    "weight": "250 g",
+    "color": "light_yellow",
+    "addiction_type": "mutagen",
+    "stim": -20,
+    "container": "flask_glass",
+    "comestible_type": "DRINK",
+    "symbol": "~",
+    "healthy": -10,
+    "addiction_potential": 5,
+    "calories": 26,
+    "description": "A serum made from a Kitsune's Star Pearl",
+    "price": 1000,
+    "volume": "500 ml",
+    "phase": "liquid",
+    "charges": 2,
+    "use_action": { "type": "mutagen_iv", "mutation_category": "KITSUNE" },
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ],
+    "freezing_point": -22,
+    "fun": -15
+  },
+  {
+    "type": "mutation_category",
+    "id": "KITSUNE",
+    "name": "Kitsune",
+    "threshold_mut": "THRESH_FOX",
+    "mutagen_message": "Kitsune Mutagen WIP Message",
+    "iv_message": "You're filled with burning light",
+    "iv_sound": true,
+    "iv_sound_message": "a crackle",
+    "iv_sound_id": "crackle",
+    "iv_noise": 1,
+    "iv_additional_mutations": 1,
+    "memorial_message": "Kitsune Death WIP Message"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_FOX",
+    "name": { "str": "Kitsune" },
+    "points": 1,
+    "description": "Kitsube Threshold WIP Description",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "TAIL_FLUFFY",
+    "copy-from": "TAIL_FLUFFY",
+    "extend": { "category": [ "KITSUNE" ], "changes_to": [ "FOX_TWOTAIL" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRETTY",
+    "copy-from": "PRETTY",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "GOODCARDIO",
+    "copy-from": "GOODCARDIO",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SMELLY",
+    "copy-from": "SMELLY",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALDISCORD",
+    "copy-from": "ANIMALDISCORD",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "NIGHTVISION2",
+    "copy-from": "NIGHTVISION2",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FANGS",
+    "copy-from": "FANGS",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTFUR",
+    "copy-from": "LIGHTFUR",
+    "extend": { "changes_to": [ "KITSUNE_FUR" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "KITSUNE_FUR",
+    "name": { "str": "Red Fur" },
+    "points": 2,
+    "visibility": 11,
+    "ugliness": 1,
+    "bodytemp_modifiers": [ 750, 1500 ],
+    "bodytemp_sleep": 500,
+    "description": "Dense reddish-orange fur has grown to cover your entire body, providing a marginal protection against attacks, and considerable protection from cold.",
+    "types": [ "SKIN" ],
+    "prereqs": [ "LIGHTFUR" ],
+    "category": [ "KITSUNE" ],
+    "armor": [
+      {
+        "parts": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "mouth", "eyes" ],
+        "bash": 1
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "PADDED_FEET",
+    "copy-from": "PADDED_FEET",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRED1",
+    "copy-from": "PRED1",
+    "extend": { "category": [ "KITSUNE" ], "threshreq": [ "THRESH_FOX" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRED2",
+    "copy-from": "PRED2",
+    "extend": { "category": [ "KITSUNE" ], "threshreq": [ "THRESH_FOX" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRED3",
+    "copy-from": "PRED3",
+    "extend": { "category": [ "KITSUNE" ], "threshreq": [ "THRESH_FOX" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CANINE_EARS",
+    "copy-from": "CANINE_EARS",
+    "extend": { "changes_to": [ "FOX_EARS" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_EARS",
+    "name": { "str": "Fox Ears" },
+    "points": 1,
+    "visibility": 4,
+    "ugliness": 0,
+    "description": "You have fox ears, pointing straight up and alert.",
+    "types": [ "EARS" ],
+    "category": [ "KITSUNE" ],
+    "hearing_modifier": 1.75
+  },
+  {
+    "type": "mutation",
+    "id": "STR_UP_2",
+    "copy-from": "STR_UP_2",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_2",
+    "copy-from": "DEX_UP_3",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_3",
+    "copy-from": "INT_UP_3",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_UP",
+    "copy-from": "PER_UP",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL",
+    "copy-from": "BEAUTIFUL",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SNOUT",
+    "copy-from": "SNOUT",
+    "extend": { "changes_to": [ "FOX_MUZZLE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_MUZZLE",
+    "name": { "str": "Fox Muzzle" },
+    "points": -2,
+    "visibility": 6,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "Your jaw and nose have extended into a lupine muzzle.  It lends itself to biting in combat and looks impressive, but prevents wearing mouthgear.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SNOUT" ],
+    "category": [ "KITSUNE" ],
+    "restricts_gear": [ "mouth" ],
+    "social_modifiers": { "intimidate": 6 },
+    "attacks": {
+      "attack_text_u": "You nip at %s",
+      "attack_text_npc": "%1$s nips and harries %2$s",
+      "blocker_mutations": [ "FANGS" ],
+      "body_part": "mouth",
+      "chance": 18,
+      "base_damage": { "damage_type": "cut", "amount": 4 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PAWS",
+    "copy-from": "PAWS",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CLAWS_RETRACT",
+    "copy-from": "CLAWS_RETRACT",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HEAVYSLEEPER",
+    "copy-from": "HEAVYSLEEPER",
+    "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_TWOTAIL",
+    "name": { "str": "Two Tailed" },
+    "points": 2,
+    "visibility": 7,
+    "description": "You have two long, fluffy tails.  You can feel their power flowing through you.  Prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "prereqs": [ "TAIL_FLUFFY" ],
+    "changes_to": [ "FOX_THREETAIL" ],
+    "category": [ "KITSUNE" ],
+    "restricts_gear": [ "leg_l", "leg_r" ],
+    "threshreq": [ "THRESH_FOX" ],
+    "allow_soft_gear": true,
+    "social_modifiers": { "lie": -20, "persuade": 10 },
+    "dodge_modifier": 5,
+    "spells_learned": [ [ "summon_foxfire", 0 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_THREETAIL",
+    "name": { "str": "Three Tailed" },
+    "points": 2,
+    "visibility": 7,
+    "description": "You have three long, fluffy tails.  You can feel their power flowing through you.  Prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "prereqs": [ "TAIL_TWOTAIL" ],
+    "category": [ "KITSUNE" ],
+    "restricts_gear": [ "leg_l", "leg_r" ],
+    "threshreq": [ "THRESH_FOX" ],
+    "allow_soft_gear": true,
+    "social_modifiers": { "lie": -20, "persuade": 10 },
+    "dodge_modifier": 5,
+    "spells_learned": [ [ "kitsune_firebolt", 0 ] ]
+  }
+]
