@@ -34,9 +34,9 @@
     "points": 2,
     "skills": [ { "level": 1, "name": "spellcraft" } ],
     "items": {
-      "both": [ "jeans", "tshirt", "gloves_light", "boots", "socks", "hoodie", "fox_plush" ],
-      "male": [ "boxer_briefs" ],
-      "female": [ "bra", "panties" ]
+      "both": [ "jeans", "tshirt", "gloves_light", "boots", "hoodie", "fox_plush" ],
+      "male": [ "boxer_briefs", "socks" ],
+      "female": [ "bra", "panties", "stockings" ]
     }
   },
   {
