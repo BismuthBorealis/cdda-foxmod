@@ -1,27 +1,22 @@
 [
   {
     "type": "COMESTIBLE",
-    "id": "kitsune_serum",
-    "name": "Star Pearl Serum",
-    "weight": "250 g",
+    "id": "iv_mutagen_kitsune",
+    "copy-from": "iv_mutagen_flavor",
+    "name": { "str": "kitsune serum" },
     "color": "yellow",
-    "addiction_type": "mutagen",
-    "stim": -20,
-    "container": "flask_glass",
-    "comestible_type": "DRINK",
-    "symbol": "~",
-    "healthy": -10,
-    "addiction_potential": 5,
-    "calories": 26,
-    "description": "A serum made from a Kitsune's Star Pearl",
-    "price": 1000,
-    "volume": "500 ml",
-    "phase": "liquid",
-    "charges": 2,
-    "use_action": { "type": "mutagen_iv", "mutation_category": "KITSUNE" },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ],
-    "freezing_point": -22,
-    "fun": -15
+    "healthy": -4,
+    "description": "A super-concentrated mutagen made from a Kitsune's Star Pearl",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "KITSUNE" }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mutagen_kitsune",
+    "copy-from": "mutagen_flavor",
+    "name": { "str": "kitsune mutagen"},
+    "color": "yellow",
+    "description": "A mutagen made from a Kitsune's Star Pearl",
+    "use_action": { "type": "mutagen", "mutation_category": "KITSUNE" }
   },
   {
     "type": "mutation_category",
