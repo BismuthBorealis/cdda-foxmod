@@ -12,8 +12,27 @@
   },
   {
     "type": "item_group",
-    "id": "kitsune_pearl",
-    "items": [ [ "star_pearl", 1 ] ]
+    "id": "twotail_pearl",
+    "subtype": "collection",
+    "items": [ [ "star_pearl", 20 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "threetail_pearl",
+    "subtype": "collection",
+    "items": [ [ "star_pearl", 30 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "fourtail_pearl",
+    "subtype": "collection",
+    "items": [ [ "star_pearl", 40 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "fivetail_pearl",
+    "subtype": "collection",
+    "items": [ [ "star_pearl", 50 ] ]
   },
   {
     "id": "mon_fox_twotail",
@@ -41,7 +60,7 @@
     "dodge": 7,
     "vision_night": 5,
     "harvest": "mammal_tiny",
-    "death_drops": "kitsune_pearl",
+    "death_drops": "twotail_pearl",
     "special_attacks": [
       { "type": "spell", "spell_data": { "id": "obfuscated_body", "min_level": 1 }, "cooldown": 8 }
     ],
@@ -78,7 +97,7 @@
     "dodge": 7,
     "vision_night": 6,
     "harvest": "mammal_tiny",
-    "death_drops": "kitsune_pearl",
+    "death_drops": "threetail_pearl",
     "special_attacks": [
       { "type": "spell", "spell_data": { "id": "obfuscated_body", "min_level": 1 }, "cooldown": 7 },
       { "type": "spell", "spell_data": { "id": "summon_foxfire", "min_level": 1 }, "cooldown": 9 }
@@ -116,7 +135,7 @@
     "dodge": 7,
     "vision_night": 6,
     "harvest": "mammal_tiny",
-    "death_drops": "kitsune_pearl",
+    "death_drops": "fourtail_pearl",
     "special_attacks": [
       { "type": "spell", "spell_data": { "id": "obfuscated_body", "min_level": 2 }, "cooldown": 6 },
       { "type": "spell", "spell_data": { "id": "summon_foxfire", "min_level": 1 }, "cooldown": 8 },
@@ -155,7 +174,7 @@
     "dodge": 7,
     "vision_night": 7,
     "harvest": "mammal_tiny",
-    "death_drops": "kitsune_pearl",
+    "death_drops": "fivetail_pearl",
     "special_attacks": [
       { "type": "spell", "spell_data": { "id": "obfuscated_body", "min_level": 2 }, "cooldown": 5 },
       { "type": "spell", "spell_data": { "id": "summon_foxfire", "min_level": 2 }, "cooldown": 7 },
