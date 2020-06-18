@@ -260,7 +260,7 @@
     "visibility": 7,
     "description": "You have three long, fluffy tails.  You can feel their power flowing through you.  Prevents wearing non-fabric pants.",
     "types": [ "TAIL" ],
-    "prereqs": [ "TAIL_TWOTAIL" ],
+    "prereqs": [ "FOX_TWOTAIL" ],
     "category": [ "KITSUNE" ],
     "restricts_gear": [ "leg_l", "leg_r" ],
     "threshreq": [ "THRESH_FOX" ],
