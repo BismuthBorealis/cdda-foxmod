@@ -4,7 +4,7 @@
     "id": "kitsune_serum",
     "name": "Star Pearl Serum",
     "weight": "250 g",
-    "color": "light_yellow",
+    "color": "yellow",
     "addiction_type": "mutagen",
     "stim": -20,
     "container": "flask_glass",
