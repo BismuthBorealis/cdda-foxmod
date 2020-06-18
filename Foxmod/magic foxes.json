@@ -3,7 +3,7 @@
     "id": "star_pearl",
     "type": "GENERIC",
     "symbol": "*",
-    "color": "light_yellow",
+    "color": "yellow",
     "name": "star pearl",
     "description": "A Pearl treasured by kitsune.",
     "material": [ "gemstone" ],
