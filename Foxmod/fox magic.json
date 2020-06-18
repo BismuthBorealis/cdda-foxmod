@@ -23,6 +23,7 @@
   {
     "id": "shelter_supplies",
     "type": "item_group",
+    "subtype": "collection",
     "items": [ [ "fox_plush", 2 ] ]
   },
   {
