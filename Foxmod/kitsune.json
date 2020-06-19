@@ -263,5 +263,51 @@
     "social_modifiers": { "lie": -20, "persuade": 10 },
     "dodge_modifier": 5,
     "spells_learned": [ [ "kitsune_firebolt", 0 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "KITSUNE_MUZZLE",
+    "name": { "str": "Kitsune Muzzle" },
+    "points": -4,
+    "visibility": 6,
+    "active": true,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "Your jaw and nose have extended into a lupine muzzle.  It lends itself to biting in combat and looks impressive, but prevents wearing mouthgear.  You can morph your face back to a normal human face at will.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "FOX_MUZZLE" ],
+    "category": [ "KITSUNE" ],
+    "threshreq": [ "THRESH_FOX" ],
+    "restricts_gear": [ "mouth" ],
+    "social_modifiers": { "intimidate": 6 },
+    "attacks": {
+      "attack_text_u": "You nip at %s",
+      "attack_text_npc": "%1$s nips and harries %2$s",
+      "blocker_mutations": [ "FANGS" ],
+      "body_part": "mouth",
+      "chance": 18,
+      "base_damage": { "damage_type": "cut", "amount": 4 }
+    },
+    "transform": { "target": "KITSUNE_MUZZLE_HIDDEN",
+               "msg_transform": "Your face shifts.",
+               "active": false ,
+               "moves": 100
+    },
+  },
+  {
+    "type": "mutation",
+    "id": "KITSUNE_MUZZLE_HIDDEN",
+    "name": { "str": "Kitsune Face" },
+    "points": -2,
+    "visibility": 0,
+    "ugliness": -1,
+    "mixed_effect": true,
+    "description": "Your face is normal, if slightly prettier.  You can morph your face back to a lupine muzzle at will.",
+    "types": [ "MUZZLE" ],
+    "transform": { "target": "KITSUNE_MUZZLE",
+               "msg_transform": "Your face shifts.",
+               "active": false ,
+               "moves": 100
+    },
   }
 ]
