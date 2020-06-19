@@ -23,14 +23,14 @@
     "id": "KITSUNE",
     "name": "Kitsune",
     "threshold_mut": "THRESH_FOX",
-    "mutagen_message": "Kitsune Mutagen WIP Message",
+    "mutagen_message": "You feel a warmth grow inside you",
     "iv_message": "You're filled with burning light",
     "iv_sound": true,
     "iv_sound_message": "a crackle",
     "iv_sound_id": "crackle",
     "iv_noise": 1,
     "iv_additional_mutations": 1,
-    "memorial_message": "Kitsune Death WIP Message"
+    "memorial_message": "Got Outfoxed"
   },
   {
     "type": "mutation",
