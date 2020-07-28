@@ -130,5 +130,11 @@
     "id": "HEAVYSLEEPER",
     "copy-from": "HEAVYSLEEPER",
     "extend": { "category": [ "KITSUNE" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PYROMANIA",
+    "copy-from": "PYROMANIA",
+    "extend": { "category": [ "KITSUNE" ] }
   }
 ]

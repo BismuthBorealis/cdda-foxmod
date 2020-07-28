@@ -13,12 +13,12 @@
   {
     "id": "novels",
     "type": "item_group",
-    "items": [ [ "fox_book", 2 ] ]
+    "items": [ [ "fox_book", 5 ] ]
   },
   {
     "id": "spellbook_tier_0",
     "type": "item_group",
-    "items": [ [ "fox_book", 30 ] ]
+    "items": [ [ "fox_book", 35 ] ]
   },
   {
     "id": "shelter_supplies",
@@ -99,7 +99,7 @@
     "name": { "str": "Summon \"Cuteness\"" },
     "description": "Apparently \"Makes the world an objectively better place\"",
     "valid_targets": [ "ground" ],
-    "flags": [ "LOUD", "SOMATIC","SPAWN_GROUP" ],
+    "flags": [ "SOMATIC", "SPAWN_GROUP" ],
     "min_damage": 1,
     "max_damage": 8,
     "damage_increment": 0.5,
@@ -126,7 +126,7 @@
     "name": [ "Lullaby" ],
     "apply_message": "You feel calm and sleepy, an ethereal tune ringing in your ears.",
     "base_mods": {
-      "sleep_chance": [ 100 ],
+      "sleep_chance": [ 90 ],
       "sleep_min": [ 15000 ],
       "sleep_max": [ 35000 ]
     }
@@ -145,7 +145,7 @@
     "base_energy_cost": 100,
     "base_casting_time": 100,
     "difficulty": 6,
-    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "CONCENTRATE" ],
+    "flags": [ "VERBAL" ],
     "effect": "target_attack",
     "effect_str": "lullaby"
   }

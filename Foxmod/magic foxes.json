@@ -1,38 +1,87 @@
 [
   {
     "id": "star_pearl",
-    "type": "GENERIC",
+    "type": "COMESTIBLE",
+    "name": { "str": "star pearl" },
+    "description": "A Pearl treasured by kitsune.",
+    "price": 100000,
+    "price_postapoc": 50,
+    "comestible_type": "MED",
+    "category": "mutagen",
+    "weight": "100 g",
+    "volume": "250 ml",
     "symbol": "*",
     "color": "yellow",
-    "name": "star pearl",
-    "description": "A Pearl treasured by kitsune.",
+    "healthy": 2,
+    "addiction_type": "mutagen",
     "material": [ "gemstone" ],
-    "weight": "100 g",
-    "volume": 1
+    "flags": [ "CARNIVORE_OK", "NO_INGEST" ],
+    "use_action": { "type": "mutagen", "mutation_category": "KITSUNE" }
+  },
+  {
+    "id": "greater_star_pearl",
+    "copy-from": "star_pearl",
+    "type": "COMESTIBLE",
+    "name": { "str": "greater star pearl" },
+    "description": "A Pearl treasured by kitsune.",
+    "healthy": 4,
+    "price": 200000,
+    "price_postapoc": 100,
+    "use_action": { "type": "mutagen_iv", "mutation_category": "KITSUNE" }
+  },
+  {
+    "type": "SPECIES",
+    "id": "FOX",
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
+    "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ]
   },
   {
     "type": "item_group",
     "id": "twotail_pearl",
     "subtype": "collection",
-    "items": [ [ "star_pearl", 20 ] ]
+    "items": [ [ "star_pearl", 30 ] ]
   },
   {
     "type": "item_group",
     "id": "threetail_pearl",
     "subtype": "collection",
-    "items": [ [ "star_pearl", 30 ] ]
+    "items": [ [ "star_pearl", 50 ] ]
   },
   {
     "type": "item_group",
     "id": "fourtail_pearl",
     "subtype": "collection",
-    "items": [ [ "star_pearl", 40 ] ]
+    "items": [ [ "star_pearl", 70 ] ]
   },
   {
     "type": "item_group",
     "id": "fivetail_pearl",
     "subtype": "collection",
-    "items": [ [ "star_pearl", 50 ] ]
+    "items": [ [ "star_pearl", 90 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "sixtail_pearl",
+    "subtype": "collection",
+    "items": [ [ "greater_star_pearl", 30 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "seventail_pearl",
+    "subtype": "collection",
+    "items": [ [ "greater_star_pearl", 50 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "eighttail_pearl",
+    "subtype": "collection",
+    "items": [ [ "greater_star_pearl", 70 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ninetail_pearl",
+    "subtype": "collection",
+    "items": [ [ "greater_star_pearl", 90 ] ]
   },
   {
     "id": "mon_fox_twotail",
@@ -42,7 +91,7 @@
     "default_faction": "fox",
     "bodytype": "dog",
     "categories": [ "WILDLIFE" ],
-    "species": [ "MAMMAL", "MAGICAL_BEAST" ],
+    "species": [ "MAMMAL", "MAGICAL_BEAST", "FOX" ],
     "volume": "4132 ml",
     "weight": "4132 g",
     "hp": 30,
@@ -79,7 +128,7 @@
     "default_faction": "fox",
     "bodytype": "dog",
     "categories": [ "WILDLIFE" ],
-    "species": [ "MAMMAL", "MAGICAL_BEAST" ],
+    "species": [ "MAMMAL", "MAGICAL_BEAST", "FOX" ],
     "volume": "4132 ml",
     "weight": "4132 g",
     "hp": 35,
@@ -117,7 +166,7 @@
     "default_faction": "fox",
     "bodytype": "dog",
     "categories": [ "WILDLIFE" ],
-    "species": [ "MAMMAL", "MAGICAL_BEAST" ],
+    "species": [ "MAMMAL", "MAGICAL_BEAST", "FOX" ],
     "volume": "4132 ml",
     "weight": "4132 g",
     "hp": 40,
@@ -156,7 +205,7 @@
     "default_faction": "fox",
     "bodytype": "dog",
     "categories": [ "WILDLIFE" ],
-    "species": [ "MAMMAL", "MAGICAL_BEAST" ],
+    "species": [ "MAMMAL", "MAGICAL_BEAST", "FOX" ],
     "volume": "4132 ml",
     "weight": "4132 g",
     "hp": 30,
@@ -179,7 +228,7 @@
       { "type": "spell", "spell_data": { "id": "obfuscated_body", "min_level": 2 }, "cooldown": 5 },
       { "type": "spell", "spell_data": { "id": "summon_foxfire", "min_level": 2 }, "cooldown": 7 },
       { "type": "spell", "spell_data": { "id": "kitsune_firebolt", "min_level": 1 }, "cooldown": 9 },
-      { "type": "spell", "spell_data": { "id": "kitsune_escape", "min_level": 1 }, "cooldown": 11 }
+      { "type": "spell", "spell_data": { "id": "mon_kitsune_escape", "min_level": 1 }, "cooldown": 11 }
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
