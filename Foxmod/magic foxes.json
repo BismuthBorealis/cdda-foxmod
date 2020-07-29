@@ -117,7 +117,7 @@
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN", "KEENNOSE", "BLEED" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN", "KEENNOSE" ],
     "upgrades": { "age_grow": 300, "into": "mon_fox_threetail" }
   },
   {
